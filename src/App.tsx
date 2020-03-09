@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import logo from './logo.svg';
+import Input from './Input';
+import List from './List';
 import './App.css';
+import { isWithinInterval } from 'date-fns';
 
-function App() {
-  return (
+interface AppProps{
+}
+
+interface AppState{
+}
+
+const style = {
+  backgroundColor : "white",
+  color : "black"
+}
+
+class App extends React.Component<AppProps, AppState> {
+  constructor( props : AppProps ){
+    super(props);
+  };
+
+  render = () : ReactElement => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header" style={style}>
+        <Input />
+        <List />
       </header>
     </div>
   );
