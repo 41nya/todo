@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![build status](https://github.com/41nya/todo/actions/workflows/main.yml/badge.svg)
 
 ## Available Scripts
 
