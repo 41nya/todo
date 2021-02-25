@@ -1,8 +1,7 @@
 import React, { ReactElement, Dispatch } from 'react';
 import {connect} from 'react-redux';
-import {Task, TaskPriority} from './reducers/reducer';
+import {Task} from './reducers/reducer';
 import {Actions, deleteTodo} from './actions/actions';
-import Button from '@material-ui/core/Button';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
